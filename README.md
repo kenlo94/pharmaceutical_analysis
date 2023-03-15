@@ -2,6 +2,7 @@
 
 ## Resources
 Data Source: Mouse_metadata.csv, Study_results.csv
+
 Software: Python 3.9.7; Jupyter Notebook 6.4.11; Pandas 1.3.5; Matplotlib 3.5.1
 
 ## Project Overview
@@ -9,7 +10,7 @@ Use the data provided to compare the effectiveness of the drug, Capomulin, again
 
 Tasks include:
 1. Preparing and cleaning data by merging the two datasets and dropping duplicate mice ID's
-2. Generating summary statistics
+2. Generating summary statistics for each drug regimen
 3. Creating visualizations such as bar charts, pie charts, line charts, and scatter plots
 4. Calculating quartiles, finding outliers, and creating a box plot
 5. Calculating correlation and linear regression between the selected drug regimen, Capomulin, and the average tumor volume
@@ -25,8 +26,7 @@ Tasks include:
 
 ![Screenshot](Images/summary_statistics.PNG)
 - The table above displays the summary statistics for each drug regimen
-- The lowest mean tumor volume was 40.2 mm3 using Ramicane
-- The lowest volume variance was 23.4 mm3 also using Ramicane
+- Ramicane is the leading drug regimen across all category statistics with the smallest average tumor volume, median tumor volume, tumor volume variance, tumor volume standard deviation, and tumor volume standard error of mean
 
 ![Screenshot](Images/bar.PNG)
 - The bar chart above displays the number of mice tested for each drug regimen

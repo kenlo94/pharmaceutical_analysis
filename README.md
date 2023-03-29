@@ -3,7 +3,7 @@
 ## Resources
 Data Source: Mouse_metadata.csv, Study_results.csv
 
-Software: Python 3.9.7; Jupyter Notebook 6.4.11; Pandas 1.3.5; Matplotlib 3.5.1
+Software: Python 3.9.7; Jupyter Notebook 6.4.11; pandas 1.3.5; Matplotlib 3.5.1
 
 ## Project Overview
 Use the data provided to compare the effectiveness of the drug, Capomulin, against the other treatment regimens when treating squamous cell carcinoma (SCC), a commonly occuring form of skin cancer.

@@ -60,4 +60,7 @@ Above is an image showing the correlation coefficient (0.84) between mouse weigh
 - The regression equation that was calculated allows us to predict the average tumor volume for a given weight of a mouse on the ***Capomulin*** regminen. However, it's important to keep in mind that the relationship between mouse weight and tumor volume may not be the same for all mice or all treatments, and the regression equation should be used with caution and validated with additional data.
 
 ---
-<div style="text-align:left"><a href="https://kenlo94.github.io/">Return to the Homepage</a></div> <div style="text-align:right"><a href="https://github.com/kenlo94/pharmaceutical_analysis">View the Project on GitHub</a></div> 
+<div style="display: flex; justify-content: space-between;">
+    <div>Return to the <a href="https://kenlo94.github.io/">Homepage</a></div>
+    <div>View the Project on <a href="https://github.com/kenlo94/pharmaceutical_analysis">GitHub</a></div>
+</div>

@@ -1,7 +1,7 @@
 # Analyzing Anti-Cancer Medications in Mice using Jupyter Notebook, Pandas, & Matplotlib
 
 ## Resources
-Data Sources: Mouse_metadata.csv, Study_results.csv
+Data sources: Mouse_metadata.csv, Study_results.csv
 
 Software: Python 3.9.7; Jupyter Notebook 6.4.11; pandas 1.3.5; Matplotlib 3.5.1
 

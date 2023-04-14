@@ -6,7 +6,7 @@ Data sources: Mouse_metadata.csv, Study_results.csv
 Software: Python 3.9.7; Jupyter Notebook 6.4.11; pandas 1.3.5; Matplotlib 3.5.1
 
 ## Project Objectives
-### Use the data provided to compare the effectiveness of the drug, *Capomulin*, against the other treatment regimens when treating squamous cell carcinoma (SCC), a commonly occuring form of skin cancer.
+### Use the data provided to compare the effectiveness of the drug, *Capomulin*, against the other treatment regimens when treating squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.
 
 Tasks include:
 1. Preparing and cleaning data by merging the two datasets and dropping duplicate mice ID's
@@ -57,7 +57,7 @@ Above is an image showing the correlation coefficient (0.84) between mouse weigh
 
 - From the line chart I generated, we can see that ***Capomulin*** can be an effective drug regimen to treat squamous cell carcinoma (SCC). However, more data needs to be visualized as this was done for only one mouse in the dataset.
 - With a correlation coefficient of 0.84, this indicates a strong positive relationship between mouse weight and average tumor volume.
-- The regression equation that was calculated allows us to predict the average tumor volume for a given weight of a mouse on the ***Capomulin*** regminen. However, it's important to keep in mind that the relationship between mouse weight and tumor volume may not be the same for all mice or all treatments, and the regression equation should be used with caution and validated with additional data.
+- The regression equation that was calculated allows us to predict the average tumor volume for a given weight of a mouse on the ***Capomulin*** regimen. However, it's important to keep in mind that the relationship between mouse weight and tumor volume may not be the same for all mice or all treatments, and the regression equation should be used with caution and validated with additional data.
 
 ---
 Return to the [Homepage](https://kenlo94.github.io/)

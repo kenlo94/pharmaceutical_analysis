@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-07QV7C307D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-07QV7C307D');
+    </script>
+    <meta charset="utf-8">
+    <title>Analyzing Anti-Cancer Medications in Mice using Jupyter Notebook, Pandas, & Matplotlib</title>
+    <style>
+        #preview {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        body {
+            font-size: 20px;
+        }
+
+        .my-hr {
+            margin-top: -1.25em !important;
+            margin-bottom: 0em !important;
+        }
+    </style>
+</head>
+
+<body id="preview">
+    <h1 class="code-line" data-line-start=0 data-line-end=1><a
+            id="Analyzing_AntiCancer_Medications_in_Mice_using_Jupyter_Notebook_Pandas__Matplotlib_0"></a>Analyzing
+        Anti-Cancer Medications in Mice using Jupyter Notebook, Pandas, &amp; Matplotlib</h1>
+    <h2 class="code-line" data-line-start=2 data-line-end=3><a id="Resources_2"></a>Resources</h2>
+    <hr class="my-hr">
+    <p class="has-line-data" data-line-start="3" data-line-end="4">Data sources: Mouse_metadata.csv, Study_results.csv
+    </p>
+    <p class="has-line-data" data-line-start="5" data-line-end="6">Software: Python 3.9.7; Jupyter Notebook 6.4.11;
+        pandas 1.3.5; Matplotlib 3.5.1</p>
+    <h2 class="code-line" data-line-start=7 data-line-end=8><a id="Project_Objectives_7"></a>Project Objectives</h2>
+    <hr class="my-hr">
+    <h3 class="code-line" data-line-start=8 data-line-end=9><a
+            id="Use_the_data_provided_to_compare_the_effectiveness_of_the_drug_Capomulin_against_the_other_treatment_regimens_when_treating_squamous_cell_carcinoma_SCC_a_commonly_occurring_form_of_skin_cancer_8"></a>Use
+        the data provided to compare the effectiveness of the drug, <em>Capomulin</em>, against the other treatment
+        regimens when treating squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.</h3>
+    <p class="has-line-data" data-line-start="10" data-line-end="11">Tasks include:</p>
+    <ol>
+        <li class="has-line-data" data-line-start="11" data-line-end="12">Preparing and cleaning data by merging the two
+            datasets and dropping duplicate mice ID’s</li>
+        <li class="has-line-data" data-line-start="12" data-line-end="13">Generating summary statistics for each drug
+            regimen</li>
+        <li class="has-line-data" data-line-start="13" data-line-end="14">Creating visualizations such as bar charts,
+            pie charts, line charts, and scatter plots</li>
+        <li class="has-line-data" data-line-start="14" data-line-end="15">Calculating quartiles, finding outliers, and
+            creating a box plot</li>
+        <li class="has-line-data" data-line-start="15" data-line-end="17">Calculating correlation and linear regression
+            between the selected drug regimen, <strong><em>Capomulin</em></strong>, and the average tumor volume</li>
+    </ol>
+    <h2 class="code-line" data-line-start=17 data-line-end=18><a id="Results__Analysis_17"></a>Results &amp; Analysis
+    </h2>
+    <hr class="my-hr">
+    <p class="has-line-data" data-line-start="18" data-line-end="19"><img src="Images/clean_data.PNG" alt="Screenshot">
+    </p>
+    <p class="has-line-data" data-line-start="20" data-line-end="21">The table above displays the clean dataframe after
+        merging the two datasets and dropping duplicate mouse ID’s. There are 248 unique mouse ID’s in the cleaned
+        dataset, with metastatic sites ranging from 0-4, ages ranging from 1-24 months, and weights ranging from 15-30
+        grams.</p>
+    <p class="has-line-data" data-line-start="23" data-line-end="24"><img src="Images/summary_statistics.PNG"
+            alt="Screenshot"></p>
+    <p class="has-line-data" data-line-start="25" data-line-end="26">The table above displays the summary statistics for
+        each drug regimen. <strong><em>Ramicane</em></strong> is the leading drug regimen across all category statistics
+        with the smallest average tumor volume, median tumor volume, tumor volume variance, tumor volume standard
+        deviation, and tumor volume standard error of mean.</p>
+    <p class="has-line-data" data-line-start="27" data-line-end="28"><img src="Images/bar.PNG" alt="Screenshot"></p>
+    <p class="has-line-data" data-line-start="29" data-line-end="30">The bar chart above represents the count of mice
+        that were tested for each drug regimen, with <strong><em>Capomulin</em></strong> and
+        <strong><em>Ramicane</em></strong> having the highest number of test subjects, both exceeding 200 mice each.</p>
+    <p class="has-line-data" data-line-start="31" data-line-end="32"><img src="Images/pie.PNG" alt="Screenshot"></p>
+    <p class="has-line-data" data-line-start="33" data-line-end="34">The pie chart above depicts the distribution of
+        male and female mice that were tested, showing an almost equal split with roughly 50% for each gender.</p>
+    <p class="has-line-data" data-line-start="35" data-line-end="36"><img src="Images/outliers.PNG" alt="Screenshot">
+    </p>
+    <p class="has-line-data" data-line-start="37" data-line-end="38">The image above shows the results of my
+        calculations aimed at identifying outliers for the four drug regimens. The results indicate that there is only
+        one outlier for <strong><em>Infubinol</em></strong>, which falls below the lower bound.</p>
+    <p class="has-line-data" data-line-start="39" data-line-end="40"><img src="Images/boxplot.PNG" alt="Screenshot"></p>
+    <p class="has-line-data" data-line-start="41" data-line-end="42">The boxplot above displays the upper and lower
+        bounds and the single outlier I found in my previous calculations for the four drug regimens.</p>
+    <p class="has-line-data" data-line-start="43" data-line-end="44"><img src="Images/line.PNG" alt="Screenshot"></p>
+    <p class="has-line-data" data-line-start="45" data-line-end="46">The line chart depicted above shows the decrease in
+        tumor volume for mouse “l509” treated with the drug <strong><em>Capomulin</em></strong> over a period of 40+
+        days.</p>
+    <p class="has-line-data" data-line-start="47" data-line-end="48"><img src="Images/scatter.PNG" alt="Screenshot"></p>
+    <p class="has-line-data" data-line-start="49" data-line-end="50">The scatter plot above depicts the relationship
+        between the average tumor volume and mouse weight for the drug <strong><em>Capomulin</em></strong>.</p>
+    <p class="has-line-data" data-line-start="51" data-line-end="52"><img src="Images/correlation.PNG" alt="Screenshot">
+    </p>
+    <p class="has-line-data" data-line-start="53" data-line-end="54">Above is an image showing the correlation
+        coefficient (0.84) between mouse weight and average tumor volume for the drug
+        <strong><em>Capomulin</em></strong>. It also displays the linear regression model we calculated to predict the
+        average tumor volume based on the weight of the mouse.</p>
+    <h2 class="code-line" data-line-start=55 data-line-end=56><a id="Drawing_Insights_55"></a>Drawing Insights</h2>
+    <hr class="my-hr">
+    <ul>
+        <li class="has-line-data" data-line-start="57" data-line-end="58">From the line chart I generated, we can see
+            that <strong><em>Capomulin</em></strong> can be an effective drug regimen to treat squamous cell carcinoma
+            (SCC). However, more data needs to be visualized as this was done for only one mouse in the dataset.</li>
+        <li class="has-line-data" data-line-start="58" data-line-end="59">With a correlation coefficient of 0.84, this
+            indicates a strong positive relationship between mouse weight and average tumor volume.</li>
+        <li class="has-line-data" data-line-start="59" data-line-end="61">The regression equation that was calculated
+            allows us to predict the average tumor volume for a given weight of a mouse on the
+            <strong><em>Capomulin</em></strong> regimen. However, it’s important to keep in mind that the relationship
+            between mouse weight and tumor volume may not be the same for all mice or all treatments, and the regression
+            equation should be used with caution and validated with additional data.</li>
+    </ul>
+    <hr>
+    <p class="has-line-data" data-line-start="62" data-line-end="63">Return to the <a
+            href="https://kenlo94.github.io/">Homepage</a></p>
+</body>
+
+</html>
